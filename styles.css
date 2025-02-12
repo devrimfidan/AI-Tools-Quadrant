@@ -1,0 +1,124 @@
+/* Basic CSS for the quadrant */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .quadrant-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  .quadrant {
+    position: relative;
+    width: 80vw;
+    height: 80vh;
+    border: 2px solid black;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+    padding: 40px; /* Padding to ensure tools don't go off the canvas */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  /* Tool styles */
+  .tool {
+    position: absolute;
+    background-color: #ff5733;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    pointer-events: none;
+  }
+  
+  /* X and Y axis styles */
+  .axis-line {
+    position: absolute;
+    background-color: #000;
+  }
+  
+  .horizontal-line {
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+  }
+  
+  .vertical-line {
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: 2px;
+  }
+  
+  /* Axis label styles */
+  .axis-label {
+    position: absolute;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .x-label {
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .y-label {
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    writing-mode: vertical-rl;
+  }
+  
+  /* Quadrant labels positioned outside the quadrant */
+  .quadrant-label {
+    position: absolute;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Adjust quadrant labels to be outside the quadrant */
+  .leaders {
+    top: -30px;
+    right: -30px;
+  }
+  
+  .challengers {
+    top: -30px;
+    left: -30px;
+  }
+  
+  .visionaries {
+    bottom: -30px;
+    right: -30px;
+  }
+  
+  .niche-players {
+    bottom: -30px;
+    left: -30px;
+  }
+  
+  /* Increase margin inside the quadrant to avoid blocking the labels */
+  .quadrant {
+    padding: 70px; /* Increased padding */
+  }
+  
+  /* Adjust the tool placement based on percentage of quadrant width/height */
+  .tool {
+    transition: all 0.2s ease; /* Smooth transition when positioning tools */
+  }
+  

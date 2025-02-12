@@ -1,0 +1,24 @@
+{
+  "tools": [
+    {
+      "name": "Tool Leader",
+      "x": 95,
+      "y": 5
+    },
+    {
+      "name": "Tool Niche Player",
+      "x": 10,
+      "y": 80
+    },
+    {
+      "name": "Tool Visionary",
+      "x": 90,
+      "y": 80
+    },
+    {
+      "name": "Tool Challenger",
+      "x": 30,
+      "y": 30
+    }
+  ]
+}
