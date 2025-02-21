@@ -23,8 +23,8 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 1px;
+    margin-bottom: 1px;
   }
   
   /* Tool styles */
@@ -67,7 +67,7 @@ body {
   }
   
   .x-label {
-    top: 100%;
+    top: 101%;
     left: 50%;
     transform: translateX(-50%);
   }
