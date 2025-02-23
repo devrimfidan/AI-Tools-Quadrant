@@ -6,17 +6,29 @@ This project visualizes AI tools using a quadrant-based layout, inspired by the 
 
 Each tool is positioned in the quadrant based on these factors. The goal is to give users a quick overview of the landscape of AI tools, helping them to evaluate options based on the tool's execution capability and vision completeness.
 
+---
+
 ## Features
 
-- Interactive quadrant display of various AI tools.
-- Tools are represented by clickable names that display more information about each tool.
-- The quadrant includes four categories:
-  - **Leaders**
-  - **Challengers**
-  - **Visionaries**
-  - **Niche Players**
-  
-- **Ability to Execute** and **Completeness of Vision** are the two axes that determine where a tool is placed.
+- **Interactive Quadrant Display**: Visualizes AI tools in a quadrant layout.
+- **Tool Details Panel**: Click on any tool to view detailed information, including:
+  - Tool name
+  - Description
+  - Website (clickable link)
+  - Foundation year
+  - Explanation of why the tool is positioned where it is
+  - Whether the tool is open source (Yes/No)
+- **Quadrant Categories**:
+  - **Leaders**: Tools with high execution ability and vision completeness.
+  - **Challengers**: Tools with high execution ability but lower vision completeness.
+  - **Visionaries**: Tools with high vision completeness but lower execution ability.
+  - **Niche Players**: Tools with lower execution ability and vision completeness.
+- **Axis Labels**:
+  - **X-Axis**: Ability to Execute
+  - **Y-Axis**: Completeness of Vision
+- **Footnote**: A small note at the bottom of the page saying "Inspired by Gartner Magic Quadrant."
+
+---
 
 ## Getting Started
 
@@ -36,33 +48,40 @@ Follow the steps below to run the project locally.
 
 2. Open the `index.html` file in your browser.
 
-### Structure
+---
 
-- `index.html`: The main HTML structure for the quadrant.
-- `styles.css`: The stylesheet to style the quadrant and the tools.
-- `quadrant.js`: The JavaScript file to load and position the tools based on data from a JSON file.
+| **File/Folder**       | **Description**                                                                 |
+|------------------------|---------------------------------------------------------------------------------|
+| `index.html`           | The main HTML file that defines the structure of the quadrant and tool details. |
+| `styles.css`           | The stylesheet for styling the quadrant, tools, and tool details panel.         |
+| `quadrant.js`          | The JavaScript file that loads and positions tools based on data from `tools.json`. |
+| `tools.json`           | A JSON file containing the list of tools and their details.                     |
+| `README.md`            | This file, providing an overview of the project and instructions for use.       |
 
-### Customizing Tools
+---
 
-To add or modify the tools displayed in the quadrant, simply edit the `tools.json` file. Each tool should have the following properties:
+## Customizing Tools
+
+To add or modify the tools displayed in the quadrant, edit the `tools.json` file. Each tool should have the following properties:
 - `name`: The name of the tool.
 - `description`: A short description of the tool.
 - `x`: The percentage position on the x-axis (Ability to Execute).
 - `y`: The percentage position on the y-axis (Completeness of Vision).
+- `website`: The official website of the tool (URL).
+- `foundationYear`: The year the tool was founded.
+- `positionExplanation`: A brief explanation of why the tool is positioned where it is.
+- `isOpenSource`: A boolean value (`true` or `false`) indicating whether the tool is open source.
 
-Example:
+### Example Tool Entry
+
 ```json
-[
-  {
-    "name": "AI Tool 1",
-    "description": "A powerful AI tool for data analysis.",
-    "x": 50,
-    "y": 70
-  },
-  {
-    "name": "AI Tool 2",
-    "description": "An AI tool for natural language processing.",
-    "x": 80,
-    "y": 60
-  }
-]
+{
+  "name": "ChatGPT",
+  "x": 90,
+  "y": 10,
+  "description": "A conversational AI model by OpenAI.",
+  "website": "https://openai.com/chatgpt",
+  "foundationYear": 2015,
+  "positionExplanation": "Positioned as a leader due to its advanced conversational capabilities and widespread adoption.",
+  "isOpenSource": false
+}

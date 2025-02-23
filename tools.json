@@ -1,24 +1,204 @@
 {
   "tools": [
-    { "name": "ChatGPT", "x": 90, "y": 10, "description": "A conversational AI model by OpenAI." },
-    { "name": "Claude", "x": 85, "y": 15, "description": "Anthropic's powerful language model." },
-    { "name": "Microsoft Copilot", "x": 80, "y": 20, "description": "AI assistant for Microsoft 365 applications." },
-    { "name": "Google Gemini", "x": 90, "y": 5, "description": "Google's advanced generative AI model." },
-    { "name": "Perplexity AI", "x": 40, "y": 30, "description": "AI-driven search engine." },
-    { "name": "Hugging Face", "x": 35, "y": 35, "description": "A platform for NLP and machine learning models." },
-    { "name": "Mistral AI", "x": 30, "y": 25, "description": "State-of-the-art transformer-based AI." },
-    { "name": "Llama", "x": 25, "y": 40, "description": "Meta's open-source language model." },
-    { "name": "Midjourney", "x": 85, "y": 85, "description": "AI for creating stunning images from text." },
-    { "name": "Runway ML", "x": 80, "y": 80, "description": "AI-powered tools for creatives." },
-    { "name": "Leonardo AI", "x": 75, "y": 90, "description": "Image generation AI for artists." },
-    { "name": "Stable Diffusion", "x": 90, "y": 75, "description": "Open-source AI for generating images." },
-    { "name": "Notion AI", "x": 15, "y": 85, "description": "AI assistant integrated into Notion for productivity." },
-    { "name": "Copy.ai", "x": 10, "y": 90, "description": "AI-powered writing tool for marketers." },
-    { "name": "Jasper AI", "x": 20, "y": 90, "description": "Content generation AI for businesses." },
-    { "name": "Writesonic", "x": 5, "y": 80, "description": "AI tool for generating SEO-friendly content." },
-    { "name": "IBM Watson", "x": 50, "y": 50, "description": "AI-powered solutions for businesses and industries." },
-    { "name": "DataRobot", "x": 55, "y": 55, "description": "Automated machine learning platform." },
-    { "name": "Cohere", "x": 45, "y": 45, "description": "Natural language processing API." },
-    { "name": "Anthropic", "x": 60, "y": 60, "description": "AI company focused on safety and alignment." }
+    {
+      "name": "ChatGPT",
+      "x": 90,
+      "y": 10,
+      "description": "A conversational AI model by OpenAI.",
+      "website": "https://openai.com/chatgpt",
+      "foundationYear": 2015,
+      "positionExplanation": "Positioned as a leader due to its advanced conversational capabilities and widespread adoption.",
+      "isOpenSource": false
+    },
+    {
+      "name": "Claude",
+      "x": 85,
+      "y": 15,
+      "description": "Anthropic's powerful language model.",
+      "website": "https://www.anthropic.com/claude",
+      "foundationYear": 2021,
+      "positionExplanation": "Positioned as a leader due to its focus on safety and alignment in AI.",
+      "isOpenSource": false
+    },
+    {
+      "name": "Microsoft Copilot",
+      "x": 80,
+      "y": 20,
+      "description": "AI assistant for Microsoft 365 applications.",
+      "website": "https://www.microsoft.com/copilot",
+      "foundationYear": 2021,
+      "positionExplanation": "Positioned as a leader due to its integration with Microsoft's ecosystem and productivity tools.",
+      "isOpenSource": false
+    },
+    {
+      "name": "Google Gemini",
+      "x": 80,
+      "y": 5,
+      "description": "Google's advanced generative AI model.",
+      "website": "https://ai.google/gemini",
+      "foundationYear": 2023,
+      "positionExplanation": "Positioned as a leader due to Google's expertise in AI and large-scale deployment.",
+      "isOpenSource": false
+    },
+    {
+      "name": "Perplexity AI",
+      "x": 40,
+      "y": 30,
+      "description": "AI-driven search engine.",
+      "website": "https://www.perplexity.ai",
+      "foundationYear": 2022,
+      "positionExplanation": "Positioned as a visionary due to its innovative approach to search and information retrieval.",
+      "isOpenSource": false
+    },
+    {
+      "name": "Hugging Face",
+      "x": 35,
+      "y": 35,
+      "description": "A platform for NLP and machine learning models.",
+      "website": "https://huggingface.co",
+      "foundationYear": 2016,
+      "positionExplanation": "Positioned as a visionary due to its contributions to open-source AI and NLP.",
+      "isOpenSource": true
+    },
+    {
+      "name": "Mistral AI",
+      "x": 30,
+      "y": 25,
+      "description": "State-of-the-art transformer-based AI.",
+      "website": "https://www.mistral.ai",
+      "foundationYear": 2023,
+      "positionExplanation": "Positioned as a visionary due to its focus on efficient and scalable AI models.",
+      "isOpenSource": false
+    },
+    {
+      "name": "Llama",
+      "x": 25,
+      "y": 40,
+      "description": "Meta's open-source language model.",
+      "website": "https://ai.facebook.com/llama",
+      "foundationYear": 2023,
+      "positionExplanation": "Positioned as a niche player due to its open-source nature and focus on research.",
+      "isOpenSource": true
+    },
+    {
+      "name": "Midjourney",
+      "x": 85,
+      "y": 85,
+      "description": "AI for creating stunning images from text.",
+      "website": "https://www.midjourney.com",
+      "foundationYear": 2021,
+      "positionExplanation": "Positioned as a leader due to its dominance in AI-generated art.",
+      "isOpenSource": false
+    },
+    {
+      "name": "Runway ML",
+      "x": 80,
+      "y": 80,
+      "description": "AI-powered tools for creatives.",
+      "website": "https://runwayml.com",
+      "foundationYear": 2018,
+      "positionExplanation": "Positioned as a visionary due to its focus on creative applications of AI.",
+      "isOpenSource": false
+    },
+    {
+      "name": "Leonardo AI",
+      "x": 75,
+      "y": 90,
+      "description": "Image generation AI for artists.",
+      "website": "https://www.leonardo.ai",
+      "foundationYear": 2022,
+      "positionExplanation": "Positioned as a niche player due to its focus on artistic tools.",
+      "isOpenSource": false
+    },
+    {
+      "name": "Stable Diffusion",
+      "x": 90,
+      "y": 75,
+      "description": "Open-source AI for generating images.",
+      "website": "https://stability.ai",
+      "foundationYear": 2022,
+      "positionExplanation": "Positioned as a leader due to its open-source nature and widespread adoption.",
+      "isOpenSource": true
+    },
+    {
+      "name": "Notion AI",
+      "x": 15,
+      "y": 85,
+      "description": "AI assistant integrated into Notion for productivity.",
+      "website": "https://www.notion.so/ai",
+      "foundationYear": 2023,
+      "positionExplanation": "Positioned as a niche player due to its focus on productivity tools.",
+      "isOpenSource": false
+    },
+    {
+      "name": "Copy.ai",
+      "x": 10,
+      "y": 90,
+      "description": "AI-powered writing tool for marketers.",
+      "website": "https://www.copy.ai",
+      "foundationYear": 2020,
+      "positionExplanation": "Positioned as a niche player due to its focus on marketing content generation.",
+      "isOpenSource": false
+    },
+    {
+      "name": "Jasper AI",
+      "x": 20,
+      "y": 90,
+      "description": "Content generation AI for businesses.",
+      "website": "https://www.jasper.ai",
+      "foundationYear": 2021,
+      "positionExplanation": "Positioned as a niche player due to its focus on business content generation.",
+      "isOpenSource": false
+    },
+    {
+      "name": "Writesonic",
+      "x": 5,
+      "y": 80,
+      "description": "AI tool for generating SEO-friendly content.",
+      "website": "https://writesonic.com",
+      "foundationYear": 2020,
+      "positionExplanation": "Positioned as a niche player due to its focus on SEO and content marketing.",
+      "isOpenSource": false
+    },
+    {
+      "name": "IBM Watson",
+      "x": 50,
+      "y": 50,
+      "description": "AI-powered solutions for businesses and industries.",
+      "website": "https://www.ibm.com/watson",
+      "foundationYear": 2011,
+      "positionExplanation": "Positioned as a challenger due to its enterprise focus and long-standing presence in AI.",
+      "isOpenSource": false
+    },
+    {
+      "name": "DataRobot",
+      "x": 55,
+      "y": 55,
+      "description": "Automated machine learning platform.",
+      "website": "https://www.datarobot.com",
+      "foundationYear": 2012,
+      "positionExplanation": "Positioned as a challenger due to its focus on automated ML and enterprise solutions.",
+      "isOpenSource": false
+    },
+    {
+      "name": "Cohere",
+      "x": 45,
+      "y": 45,
+      "description": "Natural language processing API.",
+      "website": "https://cohere.ai",
+      "foundationYear": 2020,
+      "positionExplanation": "Positioned as a visionary due to its focus on NLP and developer-friendly APIs.",
+      "isOpenSource": false
+    },
+    {
+      "name": "Anthropic",
+      "x": 60,
+      "y": 60,
+      "description": "AI company focused on safety and alignment.",
+      "website": "https://www.anthropic.com",
+      "foundationYear": 2021,
+      "positionExplanation": "Positioned as a visionary due to its focus on AI safety and alignment.",
+      "isOpenSource": false
+    }
   ]
 }

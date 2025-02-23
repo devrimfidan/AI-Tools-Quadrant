@@ -5,31 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AI Tools Quadrant</title>
   <link rel="stylesheet" href="styles.css">
-  <!-- Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+  <div class="header-container">
+    <h1 class="page-title">AI Tools Quadrant</h1>
+    <span class="page-description">A visualization of AI tools based on their completeness of vision and ability to execute.</span>
+  </div>
   <div class="quadrant-container">
-    <h1>
-      AI Tools Quadrant 
-      <i class="fas fa-info-circle" id="info-icon"></i>  <!-- Info icon -->
-    </h1>
     <div class="quadrant" id="quadrant">
       <!-- Axis lines -->
       <div class="axis-line horizontal-line"></div>
       <div class="axis-line vertical-line"></div>
 
-      <!-- Axis labels with arrows -->
+      <!-- Axis labels -->
       <div class="axis-label x-label">→ Ability to Execute</div>
       <div class="axis-label y-label">→ Completeness of Vision</div>
-      <div class="footnote">Inspired by Gartner Magic Quadrant</div>
 
-      <!-- Quadrant labels inside the sections -->
+      <!-- Quadrant labels -->
       <div class="quadrant-label leaders">Leaders</div>
       <div class="quadrant-label challengers">Challengers</div>
       <div class="quadrant-label visionaries">Visionaries</div>
       <div class="quadrant-label niche-players">Niche Players</div>
     </div>
+
+    <div class="tool-details-panel" id="tool-details-panel">
+      <h2>Tool Details</h2>
+      <div id="tool-details-content">
+        <!-- Tool details will be injected here -->
+      </div>
+      
+    </div>
+    
   </div>
 
   <script src="quadrant.js"></script>
