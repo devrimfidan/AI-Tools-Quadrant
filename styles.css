@@ -91,18 +91,18 @@ body {
 }
 
 .y-label {
-  left: -115px; /* Negative value */
-  top: 85%;
+  left: -135px; /* Negative value */
+  top: 80%;
   transform: translateY(-50%) rotate(-90deg);
 }
 
 /* Quadrant labels */
 .quadrant-label {
   position: absolute;
-  font-weight: bold;
-  font-size: 20px;
-  color: #333;
-  background-color: rgba(255, 255, 255, 0.8); /* Add background color */
+
+  font-size: 15px;
+  color: #ffffff;
+  background-color: rgba(174, 186, 199, 1); /* Add background color */
   padding: 5px 10px; /* Add padding for better visibility */
   border-radius: 5px; /* Rounded corners */
   border: 1px solid #ccc; /* Add a border */
