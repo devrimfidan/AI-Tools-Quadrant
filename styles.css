@@ -125,26 +125,14 @@ body {
   transform: translateX(-50%);
   opacity: 0.7;
 }
-
-/* Hover effect styling */
-.tool:hover {
-  background-color: #ff6f61;  /* Change to a lighter shade for visibility */
-  cursor: pointer;
-  transform: scale(1.05);  /* Slight zoom effect on hover */
-  transition: all 0.3s ease;
-}
-/* Tooltip appearance */
 .tool-tooltip {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
   padding: 10px;
   border-radius: 5px;
-  font-size: 12px;
-  display: none; /* Initially hidden */
-  pointer-events: none;
+  font-size: 10px;
+  display: none; /* Hidden by default */
+  pointer-events: none;  /* Make it not interactable with the mouse */
   z-index: 10;
-  max-width: 200px;  /* Optional: Prevent tooltip from growing too large */
-  white-space: normal; /* Allow tooltip text to wrap */
-  text-align: center;
 }
