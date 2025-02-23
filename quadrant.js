@@ -22,22 +22,22 @@ function createTools(toolsData) {
     const tooltip = document.createElement('div');
     tooltip.classList.add('tool-tooltip');
     tooltip.textContent = tool.description;
+    tooltip.style.display = 'none';  // Hide tooltip initially
     
-    // Append tooltip to the quadrant but don't show it yet
+    // Append tooltip to the quadrant
     quadrant.appendChild(tooltip);
 
-    // Show tooltip on hover
-    toolElement.addEventListener('mouseenter', () => {
-      tooltip.classList.add('tool-tooltip-visible');
-      
-      // Center the tooltip horizontally and adjust it vertically above the tool
-      tooltip.style.left = `calc(${tool.x}% - 50%)`;  // Center it horizontally above the tool
-      tooltip.style.top = `calc(${tool.y}% - 20px)`; // Position it slightly above the tool
-    });
-
-    // Hide tooltip when mouse leaves
-    toolElement.addEventListener('mouseleave', () => {
-      tooltip.classList.remove('tool-tooltip-visible');
+    // Toggle tooltip visibility on click
+    toolElement.addEventListener('click', () => {
+      // Toggle the tooltip visibility
+      if (tooltip.style.display === 'none') {
+        tooltip.style.display = 'block'; // Show tooltip
+        // Position the tooltip near the tool
+        tooltip.style.left = `calc(${tool.x}% - 50%)`;  // Center it horizontally above the tool
+        tooltip.style.top = `calc(${tool.y}% - 20px)`; // Position it slightly above the tool
+      } else {
+        tooltip.style.display = 'none';  // Hide tooltip
+      }
     });
 
     // Append the tool to the quadrant

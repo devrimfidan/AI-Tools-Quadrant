@@ -133,7 +133,7 @@ body {
   transform: scale(1.05);  /* Slight zoom effect on hover */
   transition: all 0.3s ease;
 }
-/* Tooltip appearance on hover */
+/* Tooltip appearance */
 .tool-tooltip {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.7);
@@ -141,17 +141,10 @@ body {
   padding: 10px;
   border-radius: 5px;
   font-size: 12px;
-  display: none; /* Start hidden */
+  display: none; /* Initially hidden */
   pointer-events: none;
-  z-index: 10;  /* Ensure the tooltip is on top of other elements */
-  max-width: 200px; /* Optional: Prevent tooltip from growing too large */
-  word-wrap: break-word; /* Ensure long text wraps */
-  text-align: center;
-}
-
-/* Show tooltip on hover */
-.tool-tooltip-visible {
-  display: block; /* Make tooltip visible */
-  transform: translate(-50%, -100%); /* Position it above the tool */
+  z-index: 10;
+  max-width: 200px;  /* Optional: Prevent tooltip from growing too large */
   white-space: normal; /* Allow tooltip text to wrap */
+  text-align: center;
 }
