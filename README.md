@@ -53,13 +53,15 @@ Follow the steps below to run the project locally.
 ## Project Structure
 
 The project is organized as follows:
-
+```md
 ai-tools-quadrant/
 ├── index.html # Main HTML file for the quadrant and tool details
 ├── styles.css # Stylesheet for the quadrant, tools, and tool details panel
 ├── quadrant.js # JavaScript file to load and position tools
 ├── tools.json # JSON file containing the list of tools and their details
 ├── README.md # Project overview and instructions
+```
+
 
 ## Customizing Tools
 
