@@ -1,24 +1,24 @@
 {
   "tools": [
-    {
-      "name": "Tool Leader",
-      "x": 95,
-      "y": 5
-    },
-    {
-      "name": "Tool Niche Player",
-      "x": 10,
-      "y": 80
-    },
-    {
-      "name": "Tool Visionary",
-      "x": 90,
-      "y": 80
-    },
-    {
-      "name": "Tool Challenger",
-      "x": 30,
-      "y": 30
-    }
+    { "name": "ChatGPT", "x": 90, "y": 10, "description": "A conversational AI model by OpenAI." },
+    { "name": "Claude", "x": 85, "y": 15, "description": "Anthropic's powerful language model." },
+    { "name": "Microsoft Copilot", "x": 80, "y": 20, "description": "AI assistant for Microsoft 365 applications." },
+    { "name": "Google Gemini", "x": 95, "y": 5, "description": "Google's advanced generative AI model." },
+    { "name": "Perplexity AI", "x": 40, "y": 30, "description": "AI-driven search engine." },
+    { "name": "Hugging Face", "x": 35, "y": 35, "description": "A platform for NLP and machine learning models." },
+    { "name": "Mistral AI", "x": 30, "y": 25, "description": "State-of-the-art transformer-based AI." },
+    { "name": "Llama", "x": 25, "y": 40, "description": "Meta's open-source language model." },
+    { "name": "Midjourney", "x": 85, "y": 85, "description": "AI for creating stunning images from text." },
+    { "name": "Runway ML", "x": 80, "y": 80, "description": "AI-powered tools for creatives." },
+    { "name": "Leonardo AI", "x": 75, "y": 90, "description": "Image generation AI for artists." },
+    { "name": "Stable Diffusion", "x": 90, "y": 75, "description": "Open-source AI for generating images." },
+    { "name": "Notion AI", "x": 15, "y": 85, "description": "AI assistant integrated into Notion for productivity." },
+    { "name": "Copy.ai", "x": 10, "y": 90, "description": "AI-powered writing tool for marketers." },
+    { "name": "Jasper AI", "x": 20, "y": 95, "description": "Content generation AI for businesses." },
+    { "name": "Writesonic", "x": 5, "y": 80, "description": "AI tool for generating SEO-friendly content." },
+    { "name": "IBM Watson", "x": 50, "y": 50, "description": "AI-powered solutions for businesses and industries." },
+    { "name": "DataRobot", "x": 55, "y": 55, "description": "Automated machine learning platform." },
+    { "name": "Cohere", "x": 45, "y": 45, "description": "Natural language processing API." },
+    { "name": "Anthropic", "x": 60, "y": 60, "description": "AI company focused on safety and alignment." }
   ]
 }
