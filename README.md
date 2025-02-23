@@ -50,15 +50,16 @@ Follow the steps below to run the project locally.
 
 ---
 
-| **File/Folder**       | **Description**                                                                 |
-|------------------------|---------------------------------------------------------------------------------|
-| `index.html`           | The main HTML file that defines the structure of the quadrant and tool details. |
-| `styles.css`           | The stylesheet for styling the quadrant, tools, and tool details panel.         |
-| `quadrant.js`          | The JavaScript file that loads and positions tools based on data from `tools.json`. |
-| `tools.json`           | A JSON file containing the list of tools and their details.                     |
-| `README.md`            | This file, providing an overview of the project and instructions for use.       |
+## Project Structure
 
----
+The project is organized as follows:
+
+ai-tools-quadrant/
+├── index.html # Main HTML file for the quadrant and tool details
+├── styles.css # Stylesheet for the quadrant, tools, and tool details panel
+├── quadrant.js # JavaScript file to load and position tools
+├── tools.json # JSON file containing the list of tools and their details
+├── README.md # Project overview and instructions
 
 ## Customizing Tools
 
