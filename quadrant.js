@@ -1,8 +1,11 @@
 // Function to load tools data from an external JSON file
 function loadToolsData() {
-  fetch('tools.json')  // Assuming tools.json is the filename
+  fetch('tools.json')
     .then(response => response.json())
-    .then(data => createTools(data.tools))  // Pass the tools array to the createTools function
+    .then(data => {
+      createTools(data.tools); // Pass the tools array to the createTools function
+      showDefaultMessage(); // Show the default message on page load
+    })
     .catch(error => console.error('Error loading tools data:', error));
 }
 
@@ -13,14 +16,14 @@ function createTools(toolsData) {
     const toolElement = document.createElement('div');
     toolElement.classList.add('tool');
     toolElement.textContent = tool.name;
-    
+
     // Positioning the tool based on x and y percentages
     toolElement.style.left = `${tool.x}%`;
     toolElement.style.top = `${tool.y}%`;
-    
+
     // Add click event to show tool details
     toolElement.addEventListener('click', () => showToolDetails(tool));
-    
+
     // Append the tool to the quadrant
     quadrant.appendChild(toolElement);
   });
@@ -63,5 +66,12 @@ function showToolDetails(tool) {
   isOpenSource.innerHTML = `<strong>Open Source:</strong> ${tool.isOpenSource ? 'Yes' : 'No'}`;
   toolDetailsContent.appendChild(isOpenSource);
 }
+
+// Function to show the default message on page load
+function showDefaultMessage() {
+  const toolDetailsContent = document.getElementById('tool-details-content');
+  toolDetailsContent.innerHTML = '<p style="color: #666; text-align: center;">Click on a tool name to view details.</p>';
+}
+
 // Initialize by loading tools data
 loadToolsData();
