@@ -34,13 +34,35 @@ body {
   display: inline-block;
 }
 
-/* Container for quadrant and tool details panel */
-.quadrant-container {
-  display: flex;
+/* Main container for all content */
+.main-container {
   width: 100%;
   max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Base container styles */
+.quadrant-container {
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
+  width: 100%;
+}
+
+.quadrant {
+  flex: 1 1 600px;
+  min-height: 500px;
+  position: relative;
+}
+
+.tool-details-panel {
+  flex: 1 1 300px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
 }
 
 /* Quadrant styles */
@@ -180,5 +202,51 @@ body {
 
 #tool-details-content p {
   margin-bottom: 15px;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+  .quadrant-container {
+    flex-direction: column;
+  }
+  
+  .quadrant {
+    width: 100%;
+    height: 550px; /* Restore original height */
+    min-height: 500px; /* Restore original min-height */
+    margin-right: 0;
+  }
+  
+  .tool-details-panel {
+    width: 100%;
+    margin-top: 40px;
+    height: auto; /* Allow height to adjust based on content */
+    max-height: 600px; /* Optional: limit maximum height */
+  }
+  
+  /* Make text smaller on mobile */
+  .quadrant-label {
+    font-size: 14px;
+  }
+  
+  .axis-label {
+    font-size: 12px;
+  }
+}
+
+/* Further adjustments for very small screens */
+@media screen and (max-width: 480px) {
+  .quadrant {
+    min-height: 450px; /* Slightly smaller on very small screens, but still bigger than before */
+    padding: 30px; /* Reduce padding on very small screens */
+  }
+  
+  .page-title {
+    font-size: 24px;
+  }
+  
+  .page-description {
+    font-size: 14px;
+  }
 }
 
